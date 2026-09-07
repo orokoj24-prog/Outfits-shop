@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Outfits Shop | Fashion & Style</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Outfits Shop</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Shop</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-btn" onclick="openCart()">
+            🛒 Cart <span id="cart-count">0</span>
+        </button>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="small-title">WELCOME TO</p>
+
+            <h1>Outfits Shop</h1>
+
+            <p>
+                Discover stylish and affordable outfits for every occasion.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+
+        <div class="section-title">
+            <p>OUR COLLECTION</p>
+            <h2>Featured Outfits</h2>
+        </div>
+
+        <div class="products" id="product-list">
+            <!-- Products will be added by JavaScript -->
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2>Need Help?</h2>
+
+        <p>
+            Contact Outfits Shop on WhatsApp for orders and inquiries.
+        </p>
+
+        <a
+            href="https://wa.me/254724305617"
+            target="_blank"
+            class="whatsapp-btn"
+        >
+            💬 Chat on WhatsApp
+        </a>
+
+        <p class="phone">
+            📞 0724305617
+        </p>
+
+    </section>
+
+
+    <!-- CART -->
+    <div class="cart-overlay" id="cart-overlay">
+
+        <div class="cart">
+
+            <button class="close-cart" onclick="closeCart()">
+                ×
+            </button>
+
+            <h2>Your Cart</h2>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-total">
+                Total: KSh <span id="cart-total">0</span>
+            </div>
+
+            <button
+                class="checkout-btn"
+                onclick="checkoutWhatsApp()"
+            >
+                Order on WhatsApp
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 Outfits Shop. All Rights Reserved.</p>
+        <p>WhatsApp: 0724305617</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
